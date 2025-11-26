@@ -565,427 +565,436 @@
   </div>
 
   <script>
-    // === PRODUCT MASTER (from your sheet) ===
-    const PRODUCTS = [
-      // Water Purifiers
-      {
-        id: "WP001",
-        name: "Blaze Insta RO+UV Hot 2x",
-        category: "water_purifiers",
-        tag: "Water Purifier",
-        capacity: "—",
-        image: "images/WP001.jpg"
-      },
-      {
-        id: "WP002",
-        name: "Blaze Slimtech RO+UV+MTDS 2x",
-        category: "water_purifiers",
-        tag: "Water Purifier",
-        capacity: "—",
-        image: "images/WP002.jpg"
-      },
-      {
-        id: "WP003",
-        name: "Astor 2X RO+UV+SS Alk",
-        category: "water_purifiers",
-        tag: "Water Purifier",
-        capacity: "—",
-        image: "images/WP003.jpg"
-      },
-      {
-        id: "WP004",
-        name: "SUPERIO RO+UV+SS 2X",
-        category: "water_purifiers",
-        tag: "Water Purifier",
-        capacity: "—",
-        image: "images/WP004.jpg"
-      },
-      {
-        id: "WP005",
-        name: "Enhance NXT 2X RO+UV",
-        category: "water_purifiers",
-        tag: "Water Purifier",
-        capacity: "—",
-        image: "images/WP005.jpg"
-      },
-      {
-        id: "WP006",
-        name: "DESIGNO UTC RO+UV 2X",
-        category: "water_purifiers",
-        tag: "Water Purifier",
-        capacity: "—",
-        image: "images/WP006.jpg"
-      },
-      {
-        id: "WP007",
-        name: "Superio UV+UF+SS 2X",
-        category: "water_purifiers",
-        tag: "Water Purifier",
-        capacity: "—",
-        image: "images/WP007.jpg"
-      },
-      {
-        id: "WP008",
-        name: "Blaze UV+UF+SS 2X",
-        category: "water_purifiers",
-        tag: "Water Purifier",
-        capacity: "—",
-        image: "images/WP008.jpg"
-      },
-      {
-        id: "WP009",
-        name: "DESIGNO UTC UV+UF 2X",
-        category: "water_purifiers",
-        tag: "Water Purifier",
-        capacity: "—",
-        image: "images/WP009.jpg"
-      },
+  // === PRODUCT MASTER (from your sheet) ===
+  const PRODUCTS = [
+    // Water Purifiers
+    {
+      id: "WP001",
+      name: "Blaze Insta RO+UV Hot 2x",
+      category: "water_purifiers",
+      tag: "Water Purifier",
+      capacity: "—",
+      image: "images/WP001.jpg"
+    },
+    {
+      id: "WP002",
+      name: "Blaze Slimtech RO+UV+MTDS 2x",
+      category: "water_purifiers",
+      tag: "Water Purifier",
+      capacity: "—",
+      image: "images/WP002.jpg"
+    },
+    {
+      id: "WP003",
+      name: "Astor 2X RO+UV+SS Alk",
+      category: "water_purifiers",
+      tag: "Water Purifier",
+      capacity: "—",
+      image: "images/WP003.jpg"
+    },
+    {
+      id: "WP004",
+      name: "SUPERIO RO+UV+SS 2X",
+      category: "water_purifiers",
+      tag: "Water Purifier",
+      capacity: "—",
+      image: "images/WP004.jpg"
+    },
+    {
+      id: "WP005",
+      name: "Enhance NXT 2X RO+UV",
+      category: "water_purifiers",
+      tag: "Water Purifier",
+      capacity: "—",
+      image: "images/WP005.jpg"
+    },
+    {
+      id: "WP006",
+      name: "DESIGNO UTC RO+UV 2X",
+      category: "water_purifiers",
+      tag: "Water Purifier",
+      capacity: "—",
+      image: "images/WP006.jpg"
+    },
+    {
+      id: "WP007",
+      name: "Superio UV+UF+SS 2X",
+      category: "water_purifiers",
+      tag: "Water Purifier",
+      capacity: "—",
+      image: "images/WP007.jpg"
+    },
+    {
+      id: "WP008",
+      name: "Blaze UV+UF+SS 2X",
+      category: "water_purifiers",
+      tag: "Water Purifier",
+      capacity: "—",
+      image: "images/WP008.jpg"
+    },
+    {
+      id: "WP009",
+      name: "DESIGNO UTC UV+UF 2X",
+      category: "water_purifiers",
+      tag: "Water Purifier",
+      capacity: "—",
+      image: "images/WP009.jpg"
+    },
 
-      // Air Purifiers
-      {
-        id: "AP001",
-        name: "AP 230",
-        category: "air_purifiers",
-        tag: "Air Purifier",
-        capacity: "—",
-        image: "images/AP001.jpg"
-      },
-      {
-        id: "AP002",
-        name: "AP 270",
-        category: "air_purifiers",
-        tag: "Air Purifier",
-        capacity: "—",
-        image: "images/AP002.jpg"
-      },
-      {
-        id: "AP003",
-        name: "AP 355",
-        category: "air_purifiers",
-        tag: "Air Purifier",
-        capacity: "—",
-        image: "images/AP003.jpg"
-      },
-      {
-        id: "AP004",
-        name: "AP 355 Smart",
-        category: "air_purifiers",
-        tag: "Air Purifier",
-        capacity: "—",
-        image: "images/AP004.jpg"
-      },
-      {
-        id: "AP005",
-        name: "AP 500",
-        category: "air_purifiers",
-        tag: "Air Purifier",
-        capacity: "—",
-        image: "images/AP005.jpg"
-      },
+    // Air Purifiers
+    {
+      id: "AP001",
+      name: "AP 230",
+      category: "air_purifiers",
+      tag: "Air Purifier",
+      capacity: "—",
+      image: "images/AP001.jpg"
+    },
+    {
+      id: "AP002",
+      name: "AP 270",
+      category: "air_purifiers",
+      tag: "Air Purifier",
+      capacity: "—",
+      image: "images/AP002.jpg"
+    },
+    {
+      id: "AP003",
+      name: "AP 355",
+      category: "air_purifiers",
+      tag: "Air Purifier",
+      capacity: "—",
+      image: "images/AP003.jpg"
+    },
+    {
+      id: "AP004",
+      name: "AP 355 Smart",
+      category: "air_purifiers",
+      tag: "Air Purifier",
+      capacity: "—",
+      image: "images/AP004.jpg"
+    },
+    {
+      id: "AP005",
+      name: "AP 500",
+      category: "air_purifiers",
+      tag: "Air Purifier",
+      capacity: "—",
+      image: "images/AP005.jpg"
+    },
 
-      // Vacuum Cleaners
-      {
-        id: "VC001",
-        name: "Super Clean",
-        category: "vacuum_cleaners",
-        tag: "Vacuum Cleaner",
-        capacity: "—",
-        image: "images/VC001.jpg"
-      },
-      {
-        id: "VC002",
-        name: "Wet & Dry NXT",
-        category: "vacuum_cleaners",
-        tag: "Vacuum Cleaner",
-        capacity: "—",
-        image: "images/VC002.jpg"
-      },
-      {
-        id: "VC003",
-        name: "Stellar",
-        category: "vacuum_cleaners",
-        tag: "Vacuum Cleaner",
-        capacity: "—",
-        image: "images/VC003.jpg"
-      },
-      {
-        id: "VC004",
-        name: "Maxvac",
-        category: "vacuum_cleaners",
-        tag: "Vacuum Cleaner",
-        capacity: "—",
-        image: "images/VC004.jpg"
-      },
-      {
-        id: "VC005",
-        name: "Wet & Dry Zeal",
-        category: "vacuum_cleaners",
-        tag: "Vacuum Cleaner",
-        capacity: "—",
-        image: "images/VC005.jpg"
-      },
-      {
-        id: "VC006",
-        name: "Swift Clean",
-        category: "vacuum_cleaners",
-        tag: "Vacuum Cleaner",
-        capacity: "—",
-        image: "images/VC006.jpg"
-      },
-      {
-        id: "VC007",
-        name: "FORBES SMARTCLEAN WITH HOME MAPPING PRO S2",
-        category: "vacuum_cleaners",
-        tag: "Vacuum Cleaner",
-        capacity: "—",
-        image: "images/VC007.jpg"
-      },
-      {
-        id: "VC008",
-        name: "FORBES SMARTCLEAN WITH FULLY AUTOMATIC CLEANING STATION",
-        category: "vacuum_cleaners",
-        tag: "Vacuum Cleaner",
-        capacity: "—",
-        image: "images/VC008.jpg"
-      },
-      {
-        id: "VC009",
-        name: "Forbes Smartclean with Autobin S2",
-        category: "vacuum_cleaners",
-        tag: "Vacuum Cleaner",
-        capacity: "—",
-        image: "images/VC009.jpg"
-      }
-    ];
-
-    let selectedCategory = "water_purifiers";
-
-    const categoryBar = document.getElementById("categoryBar");
-    const productsGrid = document.getElementById("productsGrid");
-    const stockForm = document.getElementById("stockForm");
-    const statusBanner = document.getElementById("statusBanner");
-    const submitBtn = document.getElementById("submitBtn");
-    const addOtherBtn = document.getElementById("addOtherBtn");
-    const otherProductsContainer = document.getElementById("otherProductsContainer");
-
-    function formatCategoryLabel(cat) {
-      if (cat === "water_purifiers") return "Water Purifier";
-      if (cat === "air_purifiers") return "Air Purifier";
-      if (cat === "vacuum_cleaners") return "Vacuum Cleaner";
-      return cat;
+    // Vacuum Cleaners
+    {
+      id: "VC001",
+      name: "Super Clean",
+      category: "vacuum_cleaners",
+      tag: "Vacuum Cleaner",
+      capacity: "—",
+      image: "images/VC001.jpg"
+    },
+    {
+      id: "VC002",
+      name: "Wet & Dry NXT",
+      category: "vacuum_cleaners",
+      tag: "Vacuum Cleaner",
+      capacity: "—",
+      image: "images/VC002.jpg"
+    },
+    {
+      id: "VC003",
+      name: "Stellar",
+      category: "vacuum_cleaners",
+      tag: "Vacuum Cleaner",
+      capacity: "—",
+      image: "images/VC003.jpg"
+    },
+    {
+      id: "VC004",
+      name: "Maxvac",
+      category: "vacuum_cleaners",
+      tag: "Vacuum Cleaner",
+      capacity: "—",
+      image: "images/VC004.jpg"
+    },
+    {
+      id: "VC005",
+      name: "Wet & Dry Zeal",
+      category: "vacuum_cleaners",
+      tag: "Vacuum Cleaner",
+      capacity: "—",
+      image: "images/VC005.jpg"
+    },
+    {
+      id: "VC006",
+      name: "Swift Clean",
+      category: "vacuum_cleaners",
+      tag: "Vacuum Cleaner",
+      capacity: "—",
+      image: "images/VC006.jpg"
+    },
+    {
+      id: "VC007",
+      name: "FORBES SMARTCLEAN WITH HOME MAPPING PRO S2",
+      category: "vacuum_cleaners",
+      tag: "Vacuum Cleaner",
+      capacity: "—",
+      image: "images/VC007.jpg"
+    },
+    {
+      id: "VC008",
+      name: "FORBES SMARTCLEAN WITH FULLY AUTOMATIC CLEANING STATION",
+      category: "vacuum_cleaners",
+      tag: "Vacuum Cleaner",
+      capacity: "—",
+      image: "images/VC008.jpg"
+    },
+    {
+      id: "VC009",
+      name: "Forbes Smartclean with Autobin S2",
+      category: "vacuum_cleaners",
+      tag: "Vacuum Cleaner",
+      capacity: "—",
+      image: "images/VC009.jpg"
     }
+  ];
 
-    // Render products for current category
-    function renderProducts() {
-      productsGrid.innerHTML = "";
-      const filtered = PRODUCTS.filter(p => p.category === selectedCategory);
+  let selectedCategory = "water_purifiers";
 
-      filtered.forEach(product => {
-        const card = document.createElement("div");
-        card.className = "product-card";
+  // NEW: remember quantities even when switching tabs
+  const quantities = {}; // { productId: number }
 
-        card.innerHTML = `
-          <div class="product-image-wrapper">
-            <img src="${product.image}" alt="${product.name}" class="product-image" />
+  const categoryBar = document.getElementById("categoryBar");
+  const productsGrid = document.getElementById("productsGrid");
+  const stockForm = document.getElementById("stockForm");
+  const statusBanner = document.getElementById("statusBanner");
+  const submitBtn = document.getElementById("submitBtn");
+  const addOtherBtn = document.getElementById("addOtherBtn");
+  const otherProductsContainer = document.getElementById("otherProductsContainer");
+
+  function formatCategoryLabel(cat) {
+    if (cat === "water_purifiers") return "Water Purifier";
+    if (cat === "air_purifiers") return "Air Purifier";
+    if (cat === "vacuum_cleaners") return "Vacuum Cleaner";
+    return cat;
+  }
+
+  // Render products for current category
+  function renderProducts() {
+    productsGrid.innerHTML = "";
+    const filtered = PRODUCTS.filter(p => p.category === selectedCategory);
+
+    filtered.forEach(product => {
+      const card = document.createElement("div");
+      card.className = "product-card";
+
+      const currentQty = quantities[product.id] ?? 0;
+
+      card.innerHTML = `
+        <div class="product-image-wrapper">
+          <img src="${product.image}" alt="${product.name}" class="product-image" />
+        </div>
+        <div class="product-name">${product.name}</div>
+        <div class="product-meta">
+          Code: ${product.id} · ${product.tag} · ${product.capacity}
+        </div>
+        <div class="product-footer">
+          <div class="qty-field">
+            Qty
+            <input
+              type="number"
+              min="0"
+              max="50"
+              value="${currentQty}"
+              data-product-id="${product.id}"
+              class="qty-input"
+            />
           </div>
-          <div class="product-name">${product.name}</div>
-          <div class="product-meta">
-            Code: ${product.id} · ${product.tag} · ${product.capacity}
+          <div class="chip">
+            ${formatCategoryLabel(product.category)}
           </div>
-          <div class="product-footer">
-            <div class="qty-field">
-              Qty
-              <input
-                type="number"
-                min="0"
-                max="50"
-                value="0"
-                data-product-id="${product.id}"
-                class="qty-input"
-              />
-            </div>
-            <div class="chip">
-              ${formatCategoryLabel(product.category)}
-            </div>
-          </div>
-        `;
-
-        productsGrid.appendChild(card);
-      });
-    }
-
-    // Add an "Other Product" row
-    function addOtherRow() {
-      const row = document.createElement("div");
-      row.className = "other-row";
-
-      row.innerHTML = `
-        <input
-          type="text"
-          class="other-name"
-          placeholder="Enter product name (e.g., New RO Model)"
-        />
-        <select class="other-category">
-          <option value="water_purifiers">Water Purifier</option>
-          <option value="air_purifiers">Air Purifier</option>
-          <option value="vacuum_cleaners">Vacuum Cleaner</option>
-        </select>
-        <input
-          type="number"
-          class="other-qty"
-          min="0"
-          max="50"
-          value="0"
-          placeholder="Qty"
-        />
-        <button type="button" class="other-row-remove" title="Remove">
-          ✕
-        </button>
+        </div>
       `;
 
-      const removeBtn = row.querySelector(".other-row-remove");
-      removeBtn.addEventListener("click", () => {
-        otherProductsContainer.removeChild(row);
-      });
-
-      otherProductsContainer.appendChild(row);
-    }
-
-    // Handle category selection
-    categoryBar.addEventListener("click", (e) => {
-      const btn = e.target.closest(".category-pill");
-      if (!btn) return;
-
-      const category = btn.getAttribute("data-category");
-      if (!category) return;
-
-      selectedCategory = category;
-
-      document.querySelectorAll(".category-pill").forEach(pill => {
-        pill.classList.toggle("active", pill === btn);
-      });
-
-      renderProducts();
+      productsGrid.appendChild(card);
     });
 
-    // Add other product row button
-    addOtherBtn.addEventListener("click", () => {
-      addOtherRow();
+    // Attach listeners to keep quantities[] in sync
+    productsGrid.querySelectorAll(".qty-input").forEach(input => {
+      input.addEventListener("input", () => {
+        const id = input.getAttribute("data-product-id");
+        const val = Number(input.value) || 0;
+        quantities[id] = val;
+      });
+    });
+  }
+
+  // Add an "Other Product" row
+  function addOtherRow() {
+    const row = document.createElement("div");
+    row.className = "other-row";
+
+    row.innerHTML = `
+      <input
+        type="text"
+        class="other-name"
+        placeholder="Enter product name (e.g., New RO Model)"
+      />
+      <select class="other-category">
+        <option value="water_purifiers">Water Purifier</option>
+        <option value="air_purifiers">Air Purifier</option>
+        <option value="vacuum_cleaners">Vacuum Cleaner</option>
+      </select>
+      <input
+        type="number"
+        class="other-qty"
+        min="0"
+        max="50"
+        value="0"
+        placeholder="Qty"
+      />
+      <button type="button" class="other-row-remove" title="Remove">
+        ✕
+      </button>
+    """
+
+    const removeBtn = row.querySelector(".other-row-remove");
+    removeBtn.addEventListener("click", () => {
+      otherProductsContainer.removeChild(row);
     });
 
-    // Handle form submit (to Google Apps Script)
-    stockForm.addEventListener("submit", async (event) => {
-      event.preventDefault();
-      clearStatus();
+    otherProductsContainer.appendChild(row);
+  }
 
-      const ispName = document.getElementById("ispName").value.trim();
-      const storeName = document.getElementById("storeName").value.trim();
-      const storeLocation = document.getElementById("storeLocation").value.trim();
+  // Handle category selection
+  categoryBar.addEventListener("click", (e) => {
+    const btn = e.target.closest(".category-pill");
+    if (!btn) return;
 
-      if (!ispName || !storeName || !storeLocation) {
-        showStatus("Please fill in all required store and ISP details.", "error");
-        return;
-      }
+    const category = btn.getAttribute("data-category");
+    if (!category) return;
 
-      const items = [];
+    selectedCategory = category;
 
-      // Fixed products
-      const qtyInputs = document.querySelectorAll(".qty-input");
-      qtyInputs.forEach(input => {
-        const qty = Number(input.value) || 0;
-        if (qty > 0) {
-          const productId = input.getAttribute("data-product-id");
-          const product = PRODUCTS.find(p => p.id === productId);
-          if (product) {
-            items.push({
-              productId: product.id,
-              productName: product.name,
-              category: product.category,
-              quantity: qty,
-              isOther: false
-            });
-          }
-        }
-      });
-
-      // Other products
-      const otherRows = document.querySelectorAll(".other-row");
-      otherRows.forEach(row => {
-        const name = row.querySelector(".other-name").value.trim();
-        const category = row.querySelector(".other-category").value;
-        const qty = Number(row.querySelector(".other-qty").value) || 0;
-
-        // Only add if both name and qty are meaningful
-        if (name && qty > 0) {
-          items.push({
-            productId: "OTHER",
-            productName: name,
-            category: category,
-            quantity: qty,
-            isOther: true
-          });
-        }
-      });
-
-      if (items.length === 0) {
-        showStatus("Please enter quantity for at least one product before submitting.", "error");
-        return;
-      }
-
-      const payload = {
-        ispName,
-        storeName,
-        storeLocation,
-        categoryFromSelector: selectedCategory, // still sent if you want it
-        timestamp: new Date().toISOString(),
-        items
-      };
-
-      submitBtn.disabled = true;
-
-      try {
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx7uMQ2ASVPyV90ab5K_POYnBE_i6FgTQq0eS6Fl7X6iX6Z5Qxod_vAF6XbHSocYUHk/exec";
-
-        await fetch(SCRIPT_URL, {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(payload)
-        });
-
-        showStatus("Stock alert submitted successfully. Thank you!", "success");
-
-        // Reset quantities
-        document.querySelectorAll(".qty-input").forEach(input => {
-          input.value = "0";
-        });
-        // Clear "other" rows
-        otherProductsContainer.innerHTML = "";
-
-      } catch (error) {
-        console.error("Submission error:", error);
-        showStatus("There was an error submitting the form. Please try again or contact your KAM.", "error");
-      } finally {
-        submitBtn.disabled = false;
-      }
+    document.querySelectorAll(".category-pill").forEach(pill => {
+      pill.classList.toggle("active", pill === btn);
     });
 
-    function showStatus(message, type) {
-      statusBanner.textContent = message;
-      statusBanner.className = "status-banner " + type;
-    }
-
-    function clearStatus() {
-      statusBanner.textContent = "";
-      statusBanner.className = "status-banner";
-    }
-
-    // Initial render
     renderProducts();
-  </script>
+  });
+
+  // Add other product row button
+  addOtherBtn.addEventListener("click", () => {
+    addOtherRow();
+  });
+
+  // Handle form submit (to Google Apps Script)
+  stockForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    clearStatus();
+
+    const ispName = document.getElementById("ispName").value.trim();
+    const storeName = document.getElementById("storeName").value.trim();
+    const storeLocation = document.getElementById("storeLocation").value.trim();
+
+    if (!ispName || !storeName || !storeLocation) {
+      showStatus("Please fill in all required store and ISP details.", "error");
+      return;
+    }
+
+    const items = [];
+
+    // ✅ Use quantities[] so we include selections from ALL categories
+    PRODUCTS.forEach(product => {
+      const qty = Number(quantities[product.id] || 0);
+      if (qty > 0) {
+        items.push({
+          productId: product.id,
+          productName: product.name,
+          category: product.category,
+          quantity: qty,
+          isOther: false
+        });
+      }
+    });
+
+    // Other products
+    const otherRows = document.querySelectorAll(".other-row");
+    otherRows.forEach(row => {
+      const name = row.querySelector(".other-name").value.trim();
+      const category = row.querySelector(".other-category").value;
+      const qty = Number(row.querySelector(".other-qty").value) || 0;
+
+      if (name && qty > 0) {
+        items.push({
+          productId: "OTHER",
+          productName: name,
+          category: category,
+          quantity: qty,
+          isOther: true
+        });
+      }
+    });
+
+    if (items.length === 0) {
+      showStatus("Please enter quantity for at least one product before submitting.", "error");
+      return;
+    }
+
+    const payload = {
+      ispName,
+      storeName,
+      storeLocation,
+      categoryFromSelector: selectedCategory,
+      timestamp: new Date().toISOString(),
+      items
+    };
+
+    submitBtn.disabled = true;
+
+    try {
+      const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx7uMQ2ASVPyV90ab5K_POYnBE_i6FgTQq0eS6Fl7X6iX6Z5Qxod_vAF6XbHSocYUHk/exec"; // <-- keep your real URL here
+
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      showStatus("Stock alert submitted successfully. Thank you!", "success");
+
+      // Reset quantities & UI
+      Object.keys(quantities).forEach(id => {
+        quantities[id] = 0;
+      });
+      renderProducts();
+      otherProductsContainer.innerHTML = "";
+
+    } catch (error) {
+      console.error("Submission error:", error);
+      showStatus("There was an error submitting the form. Please try again or contact your KAM.", "error");
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+
+  function showStatus(message, type) {
+    statusBanner.textContent = message;
+    statusBanner.className = "status-banner " + type;
+  }
+
+  function clearStatus() {
+    statusBanner.textContent = "";
+    statusBanner.className = "status-banner";
+  }
+
+  // Initial render
+  renderProducts();
+</script>
 </body>
 </html>
+
 
 
